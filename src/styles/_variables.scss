@@ -1,0 +1,59 @@
+@use "sass:map"; 
+
+$fsize: 15px;
+
+$colors: (
+  "black": #000,
+  "white": #fff,
+  "red": #aa0607,
+  "gray": #828282,
+  "primary": #659a41,
+  "secondary": #02006d,
+  "lightprimary": #f9e6f0,
+  "lightgray": #E7EEFA,
+  "lightgradient": (
+    linear-gradient(270deg, #e9defa 0%, rgba(251, 252, 219, 0.5) 100%),
+  ),
+);
+
+@each $color-name, $color-value in $colors {
+	.bg-#{$color-name} {
+	  background-color: $color-value;
+	}
+	.font-#{$color-name} {
+	  color: $color-value;
+	}
+	.border-#{$color-name} {
+	  border: 1px solid $color-value;
+	}
+}
+
+
+
+
+$breakpoints: (
+  "xs": 0,
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px,
+  "xxl": 1400px,
+);
+
+
+//font weights
+$font-weights: (
+  "extralight": 200,
+  "light": 300,
+  "regular": 400,
+  "medium": 500,
+  "semibold": 600,
+  "bold": 700,
+  "extrabold": 800,
+);
+
+@each $weight-name, $weight-value in $font-weights {
+  .font-#{$weight-name} {
+    font-weight: $weight-value;
+  }
+}
