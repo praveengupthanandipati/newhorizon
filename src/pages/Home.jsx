@@ -172,7 +172,7 @@ const Home = () => {
                   <div>
                     <span className="icon-research icomoon"></span>
                   </div>
-                  <div className="ps-4 d-flex">
+                  <div className="ps-4">
                     <h5 className="font-medium font-secondary">
                       Cutting-Edge Research
                     </h5>
