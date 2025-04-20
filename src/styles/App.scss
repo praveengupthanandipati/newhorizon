@@ -3,7 +3,7 @@
 @use "sass:map";
 @use "sass:color";
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap');
 @import "./icomoon.css";
 
 body{
@@ -128,11 +128,12 @@ header {
   }
 
 
-.fixed-top-nav {
+.scrolledHeader {
     margin-top: 0;
   
     .navbar {
       margin-top: 0px;
+      @include m.shadow(0, 2px, 5px, map.get(v.$colors, "gray"), 0.5);
     }
   }
 
@@ -170,16 +171,16 @@ header {
           content: "";        
           background-color: map.get(v.$colors, "primary");
           @include m.gradient(
-            to bottom,
+            to bottom, 
             map.get(v.$colors, "primary"),
             map.get(v.$colors, "secondary")
-          );
+            );
           position: absolute;
           top: 0;
           left: 0;
           right: 0;
           bottom: 0;
-          opacity: 0.5;
+          opacity: 0.4;
         }
       }
 
@@ -258,3 +259,150 @@ header {
       }
     }
   }
+
+
+
+  
+.HomeProducts {
+    padding: 50px 0;
+  
+    @include m.respond-below(map.get(v.$breakpoints, "md")) {
+      padding: 20px 0;
+    }
+  
+    .swiper {
+      padding: 10px 0 40px 0;
+    }
+  
+    .HomePorudctitem {
+      padding: 10px;
+      border-radius: 15px;      
+      background: map.get(v.$colors, "white");
+      height: 410px;
+      figure {
+        background: map.get(v.$colors, "white");
+        padding: 10px;
+        border-radius: 15px;
+        border: 1px solid map.get(v.$colors, "lightgray");
+      }
+      article {
+        h6 {
+          padding: 7px 0;
+          border: 1px dashed map.get(v.$colors, "primary");
+          font-size: clamp(1rem, 0.9vw, 0.9rem);
+        }
+        p {
+          font-size: clamp(0.7rem, 0.9vw, 0.9rem);
+        }
+      }
+    }
+  }
+
+
+  .homeWhyChooseus {
+    background-color:color.scale(map.get(v.$colors, "primary"), $lightness: 90%);
+    padding: 50px 0;
+    @include m.respond-below(map.get(v.$breakpoints, "sm")) {
+      padding: 20px 0;
+    }
+    .whychooseusimg {
+      border-radius: 200px;
+    }
+    .whycol {
+      margin-bottom: 35px;
+      @include m.respond-below(map.get(v.$breakpoints, "md")) {
+        margin-bottom: 10px;
+      }
+      .icomoon {
+        font-size: clamp(2rem, 3.2vw, 3.2rem);
+      }
+      h5 {
+        font-size: clamp(1rem, 1.3vw, 1.3rem);
+        padding-bottom: 0;
+      }
+      p {
+        margin: 0;
+        padding: 0;        
+      }
+    }
+}
+
+
+
+footer {
+    font-size: v.$fsize;
+    position: relative;
+    margin-top: 50px;
+    @include m.respond-below(map.get(v.$breakpoints, "md")) {
+      padding-top: 20px;
+      margin-top: 0;
+    }    
+    background-image: linear-gradient(
+      109.6deg,
+      rgba(104, 183, 249, 0.2) 31.3%,
+      rgba(176, 248, 200, 0.2) 100.2%
+    );
+    padding: 50px 0 0 0;
+  
+    .footer-col-title {
+      font-size: clamp(1.1rem, 1.2vw, 1.2rem);
+      padding-bottom: 15px;
+  
+      @include m.respond-below(map.get(v.$breakpoints, "md")) {
+        padding-bottom: 5px;
+      }
+    }
+    a {
+      color: map.get(v.$colors, "black");
+      margin-bottom: 10px;
+      display: inline-block;
+      text-decoration: underline;
+  
+      &:hover {
+        color: map.get(v.$colors, "primary");
+      }
+    }
+    .contacts {
+      li {
+        margin-bottom: 20px;
+      }
+    }
+    .social {
+      a {
+        font-size: v.$fsize + 5;
+        margin-right: 10px;
+        padding: 5px;
+        text-decoration: none;
+      }
+    }
+    .bottomFooter {
+      margin-top: 25px;
+      background-color:map.get(v.$colors, "primary");
+    }
+    .scroll-to-top {
+      right: 0;
+      bottom: 50px;
+      position: fixed;
+      z-index: 999;
+  
+      a {
+        width: 50px;
+        height: 50px;
+        background: map.get(v.$colors, "white");
+        text-align: center;
+        border-radius: 50%;
+        line-height: 150%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include m.shadow(2px, 2px, 4px, #ccc, 0.5);
+        text-decoration: none;
+  
+        .icomoon {
+          font-size: clamp(2rem, 2.5vw, 2.5rem);
+        }
+      }
+    }
+  }
+  
+  

@@ -13,11 +13,10 @@
   }
 
   //gradient
-  @mixin gradient($direction, $colors...) {
-    background: nth($colors, 1); // Fallback color
-    background: linear-gradient($direction, $colors);
+  @mixin gradient($direction, $from, $to) {
+    background: $from;
+    background: linear-gradient(to $direction, $from, $to);
   }
-  
 
   @mixin transition($property: null, $duration: null, $function: null) {
     transition: $property $duration $function;
