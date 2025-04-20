@@ -143,7 +143,7 @@ const Home = () => {
                 <div className="container">
                     <div className="sectionTitle">
                     <h6>{productTitleTop}</h6>
-                    <h3 class="font-bold">{productTitle}</h3>
+                    <h3 className="font-bold">{productTitle}</h3>
                     </div>
                 </div>
                 {/*products carousel */}

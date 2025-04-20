@@ -116,14 +116,17 @@ const Products = () => {
                         </thead>
                         <tbody>
                             {phytochemicals.map((item, index) => (
-                            <tr key={index}>
-                                <td width="30%">
-                                <a
-                                    href=""
+                                <tr 
+                                    key={index}
                                     onClick={() => handleTabClick(item.id, "all")}
+                                    style={{ cursor: 'pointer' }}
                                 >
+                                <td width="30%">
+                                <NavLink 
+                                    to={`/ProductDetail?q=${item.id}&type=all`}                                   
+                                    >
                                     {item.Product}
-                                </a>
+                                </NavLink>
                                 </td>
                                 <td width="15%">{item.BotanicalSource}</td>
                                 <td width="15%">{item.CASNumber}</td>

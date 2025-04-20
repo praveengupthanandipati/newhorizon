@@ -1,12 +1,44 @@
 import React, { useEffect, useState, memo } from "react";
 import { NavLink, useLocation } from "react-router-dom";
-import phytochemicals from "../data/Phytochemicals_data.js";
+import phytochemicals from "../data/Phytochemicals_data";
 import ProductEnquiryform from "../components/ProductEnquiry.jsx";
 import noimage from "../assets/img/noimage.jpg";
 
-  const ProductDetail = memo(({product}) => {
-  return 
-  <>    
+  const ProductDetail = memo(() => {
+
+     //to get id from url product id
+  const { search } = useLocation();
+  const queryParams = new URLSearchParams(search);
+  const id = queryParams.get("q");
+  const type = queryParams.get("type");
+  const [product, setProduct] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const localId = localStorage.getItem("id");
+  const getData = () => {
+    setLoading(true);
+    const foundProduct = phytochemicals.find(
+      (item) => item.id.toString() === id
+    );
+
+    if (foundProduct && foundProduct.id.toString() !== product?.id) {
+      setProduct(foundProduct);
+      console.log(foundProduct);
+    }
+    setLoading(false);
+  };
+
+  //if product loading is true calling product id
+  if (loading) {
+    console.log("Loading...");
+    getData();
+
+    return <div>Loading...</div>;
+  }
+  if (!product) {
+    return <div>Product not found</div>;
+  }
+  return (
+   <>
    <main className="subPage">
         <div className="subPageHeader">
           <div className="container">
@@ -37,8 +69,7 @@ import noimage from "../assets/img/noimage.jpg";
             <div className="pageContainer">
               <div className="row">
                 <div className="col-md-3">
-                  <figure className="border p-3 rounded-3 text-center sticky-top">
-                    {/* <img src={product.Image} className="img-fluid" /> */}
+                  <figure className="border p-3 rounded-3 text-center sticky-top">                  
                     {product.Image ? (
                       <img
                         src={product.Image}
@@ -312,8 +343,7 @@ import noimage from "../assets/img/noimage.jpg";
                       role="tabpanel"
                       aria-labelledby="pills-SpectrualData-tab"
                     >
-                      SpectrualData Not Available Currently, We will get back
-                      soon
+                     CoA and Spectral data available upon request 
                     </div>
                     <div
                       className="tab-pane fade"
@@ -343,8 +373,9 @@ import noimage from "../assets/img/noimage.jpg";
             </div>
           </div>
         </div>
-      </main>
-  </>;
+      </main>  
+      </>
+  )
 });
 
 export default ProductDetail;       
