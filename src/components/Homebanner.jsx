@@ -39,10 +39,10 @@ const Homebanner = () => {
           <article className="position-absolute article-slider">
             <div className="row">
                 <div className="col-md-8 col-sm-10">
-                <h2 className="font-bold font-white">
+                <h1 className="font-bold font-white">
                     A Reliable source for biologically active phytochemicals & their
                     analogues
-                </h2>
+                </h1>
                 <p className="font-white d-none d-md-block">
                     Embark on a fascinating journey into the heart of phytochemicals
                     with our captivating exploration.

@@ -122,7 +122,11 @@ header {
           @include m.respond-below(map.get(v.$breakpoints, "lg")) {
             border-bottom: 1px solid map.get(v.$colors, "lightgray");
             padding: 15px 0;
+            color:map.get(v.$colors, "white");
           }
+        }
+        .nav-link.active{
+            color:map.get(v.$colors, "primary");
         }
       }
     }
@@ -149,8 +153,13 @@ header {
     transform: translateY(-50%);
     width: 80%;
 
-    h2 {
-        font-size: clamp(1.2rem, 1.5rem + 1vw, 3rem);
+    @include m.respond-below(map.get(v.$breakpoints, "md")){
+        width:85%;
+        left:10%;
+    }
+
+    h1 {
+        font-size: clamp(1rem, 1rem + 1vw, 3rem);
     }
   }
   .swiper {
@@ -284,6 +293,9 @@ header {
       border-radius: 15px;      
       background: map.get(v.$colors, "white");
       min-height: 410px;
+      @include m.respond-below(map.get(v.$breakpoints, "xl")){
+        min-height: 300px;
+      }
       figure {
         background: map.get(v.$colors, "white");
         padding: 10px;

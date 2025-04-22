@@ -9,10 +9,9 @@ import noimage from "../assets/img/noimage.jpg";
 const HomeProducts = () => {
   const navigate = useNavigate();
   
-  const handleTabClick = (id, type) => {
-    scrollToTop();
+  const handleTabClick = (id, type) => {    
     localStorage.setItem("id", id);
-    navigate(`/product-detail?q=${id}&type=${type}`);
+    navigate(`/ProductDetail?q=${id}&type=${type}`);
   };
 
   const homeProducts = phytochemicals.slice(0, 15);
