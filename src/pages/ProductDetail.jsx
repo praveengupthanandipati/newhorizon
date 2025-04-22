@@ -1,5 +1,5 @@
 import React, { useEffect, useState, memo } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation, Link } from "react-router-dom";
 import phytochemicals from "../data/Phytochemicals_data";
 import ProductEnquiryform from "../components/ProductEnquiry.jsx";
 import noimage from "../assets/img/noimage.jpg";
@@ -334,8 +334,15 @@ import noimage from "../assets/img/noimage.jpg";
                       role="tabpanel"
                       aria-labelledby="pills-TechnicalNote-tab"
                     >
-                      Technical Note Not Available Currently, We will get back
-                      soon
+                      {/* Technical Note Not Available Currently, We will get back soon */}
+                      <div className="product-desc-item">
+                            <p className="text-uppercase font-bold position-relative">
+                              Download Technical Note
+                            </p>
+                            <h6 className="h6">                              
+                              <Link to={product?.TechnicalNote} target="_blank" className="text-primary text-underline"><i className="bi bi-download"></i> Download Technical Note</Link>                              
+                            </h6>
+                          </div>
                     </div>
                     <div
                       className="tab-pane fade"

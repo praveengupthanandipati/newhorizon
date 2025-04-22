@@ -23,6 +23,7 @@ const phytochemicals = [
     PubChemCID: 107948,
     MDLNumber: "MFCD00082318",
     InventoryStatus: "Available in gram quantities",
+    TechnicalNote:"/technicalNotes/1-9-Dideoxyforskolin.pdf",
     Analogues: "Available",
   },
   {
@@ -48,6 +49,7 @@ const phytochemicals = [
     PubChemCID: 9847548,
     MDLNumber: "MFCD06656312",
     InventoryStatus: "Available in gram quantities",
+    TechnicalNote:"/technicalNotes/11-Ketoβboswellicacid.pdf",
     Analogues: "Available",
   },
   {
@@ -73,6 +75,7 @@ const phytochemicals = [
     PubChemCID: 44576309,
     MDLNumber: " MFCD03788778",
     InventoryStatus: "Available in gram quantities",
+    TechnicalNote:"/technicalNotes/12-Deoxywithastramonolide.pdf",
     Analogues: null,
   },
 
@@ -99,6 +102,7 @@ const phytochemicals = [
     PubChemCID: 5708351,
     MDLNumber: "MFCD07778081",
     InventoryStatus: "Available in gram quantities",
+    TechnicalNote:"/technicalNotes/14-Deoxy-11-12-didehydroandrographolide.pdf",
     Analogues: "Available",
   },
   {
@@ -124,6 +128,7 @@ const phytochemicals = [
     PubChemCID: 10767792,
     MDLNumber: null,
     InventoryStatus: "Available in gram quantities",
+    TechnicalNote:"/technicalNotes/2-3-Dihydro-3-methoxywithaferinA.pdf",
     Analogues: null,
   },
   {
@@ -149,6 +154,7 @@ const phytochemicals = [
     PubChemCID: 14467538,
     MDLNumber: null,
     InventoryStatus: "Available in gram quantities",
+    TechnicalNote:"/technicalNotes/28-Deoxonimbolide.pdf",
     Analogues: null,
   },
   {
@@ -171,6 +177,7 @@ const phytochemicals = [
     PubChemCID: null,
     MDLNumber: null,
     InventoryStatus: "Available in gram quantities",
+    TechnicalNote:"/technicalNotes/7-Deacetylazadiradione.pdf",
     Analogues: null,
   },
 
@@ -194,6 +201,7 @@ const phytochemicals = [
     PubChemCID: null,
     MDLNumber: null,
     InventoryStatus: "Available in gram quantities",
+    TechnicalNote:"/technicalNotes/7-Deacetylazadirone.pdf",
     Analogues: null,
   },
   {
@@ -216,6 +224,7 @@ const phytochemicals = [
     PubChemCID: null,
     MDLNumber: null,
     InventoryStatus: "Available in gram quantities",
+    TechnicalNote:"/technicalNotes/7-Deacetylepoxyazadiradione.pdf",
     Analogues: null,
   },
   {
@@ -241,6 +250,7 @@ const phytochemicals = [
     PubChemCID: 2964,
     MDLNumber: null,
     InventoryStatus: "Available in gram quantities",
+    TechnicalNote:"/technicalNotes/7-Deacetylforskolin.pdf",
     Analogues: null,
   },
   {
@@ -266,6 +276,7 @@ const phytochemicals = [
     PubChemCID: 3034112,
     MDLNumber: null,
     InventoryStatus: "Available in gram quantities",
+    TechnicalNote:"/technicalNotes/7-Deacetylgedunin.pdf",
     Analogues: null,
   },
   {
@@ -290,6 +301,7 @@ const phytochemicals = [
     PubChemCID: 72724,
     MDLNumber: "MFCD00274568",
     InventoryStatus: "Available in gram quantities",
+    TechnicalNote:"/technicalNotes/Alantolactone.pdf",
     Analogues: "Available",
   },
   {
@@ -313,6 +325,7 @@ const phytochemicals = [
     PubChemCID: 10207,
     MDLNumber: "MFCD00017373",
     InventoryStatus: "Available in gram quantities",
+    TechnicalNote:"/technicalNotes/Aloeemodin.pdf",
     Analogues: null,
   },
 
@@ -338,6 +351,7 @@ const phytochemicals = [
     PubChemCID: 11666871,
     MDLNumber: "MFCD07778568",
     InventoryStatus: "Available in gram quantities",
+    TechnicalNote:"/technicalNotes/Andrograpanin.pdf",
     Analogues: "Available",
   },
 
@@ -364,6 +378,7 @@ const phytochemicals = [
     PubChemCID: 5318517,
     MDLNumber: "MFCD07778082",
     InventoryStatus: "Available in gram quantities",
+    TechnicalNote:"/technicalNotes/Andrographolide.pdf",
     Analogues: "Available",
   },
   {
@@ -386,6 +401,7 @@ const phytochemicals = [
     PubChemCID: 10658,
     MDLNumber: "MFCD00064930",
     InventoryStatus: "Available in gram quantities",
+    TechnicalNote:"/technicalNotes/Angelicin-(Isopsoralen).pdf",
     Analogues: null,
   },
   {
@@ -411,6 +427,7 @@ const phytochemicals = [
     PubChemCID: 12308714,
     MDLNumber: "MFCD16036226",
     InventoryStatus: "Available in gram quantities",
+    TechnicalNote:"/technicalNotes/Azadiradione.pdf",
     Analogues: null,
   },
 
@@ -436,6 +453,7 @@ const phytochemicals = [
     PubChemCID: 10906239,
     MDLNumber: null,
     InventoryStatus: "Available in gram quantities",
+    TechnicalNote:"/technicalNotes/Azadirone.pdf",
     Analogues: null,
   },
   {
@@ -460,6 +478,7 @@ const phytochemicals = [
     PubChemCID: 72326,
     MDLNumber: "MFCD00016802",
     InventoryStatus: "Available in gram quantities",
+    TechnicalNote:"/technicalNotes/Betulin.pdf",
     Analogues: "Available",
   },
 
@@ -485,6 +504,7 @@ const phytochemicals = [
     PubChemCID: 64971,
     MDLNumber: "MFCD00009619",
     InventoryStatus: "Available in gram quantities",
+    TechnicalNote:"/technicalNotes/Betulinicacid.pdf",
     Analogues: "Available",
   },
   {
@@ -508,6 +528,7 @@ const phytochemicals = [
     PubChemCID: 117443,
     MDLNumber: "MFCD00213880",
     InventoryStatus: "Available in gram quantities",
+    TechnicalNote:"/technicalNotes/Cubebin.pdf",
     Analogues: "Available",
   },
 
@@ -532,6 +553,7 @@ const phytochemicals = [
     PubChemCID: 3218,
     MDLNumber: "MFCD00016369",
     InventoryStatus: "Available in gram quantities",
+    TechnicalNote:"/technicalNotes/Embelin.pdf",
     Analogues: null,
   },
   {
@@ -557,6 +579,7 @@ const phytochemicals = [
     PubChemCID: 49863985,
     MDLNumber: null,
     InventoryStatus: "Available in gram quantities",
+    TechnicalNote:"/technicalNotes/Epoxyazadiradione.pdf",
     Analogues: "Available",
   },
   {
@@ -581,6 +604,7 @@ const phytochemicals = [
     PubChemCID: 47936,
     MDLNumber: "MFCD00082317",
     InventoryStatus: "Available in gram quantities",
+    TechnicalNote:"/technicalNotes/Forskolin.pdf",
     Analogues: "Available",
   },
   {
@@ -606,6 +630,7 @@ const phytochemicals = [
     PubChemCID: 12004512,
     MDLNumber: "MFCD01750174",
     InventoryStatus: "Available in gram quantities",
+    TechnicalNote:"/technicalNotes/Gedunin.pdf",
     Analogues: "Available",
   },
   {
@@ -629,6 +654,7 @@ const phytochemicals = [
     PubChemCID: 6450278,
     MDLNumber: "MFCD01310757",
     InventoryStatus: "Available in gram quantities",
+    TechnicalNote:"/technicalNotes/Guggulsterone-Z.pdf",
     Analogues: null,
   },
   {
@@ -653,6 +679,7 @@ const phytochemicals = [
     PubChemCID: 6439929,
     MDLNumber: "MFCD01310758",
     InventoryStatus: "Available in gram quantities",
+    TechnicalNote:"/technicalNotes/Guggulsterone-E.pdf",
     Analogues: null,
   },
 
@@ -679,6 +706,7 @@ const phytochemicals = [
     PubChemCID: 182140,
     MDLNumber: "MFCD03424459",
     InventoryStatus: "Available in gram quantities",
+    TechnicalNote:"/technicalNotes/Hypophyllanthin.pdf",
     Analogues: null,
   },
   {
@@ -703,6 +731,7 @@ const phytochemicals = [
     PubChemCID: 73285,
     MDLNumber: "MFCD08689940",
     InventoryStatus: "Available in gram quantities",
+    TechnicalNote:"/technicalNotes/Isoalantolactone.pdf",
     Analogues: "Available",
   },
   {
@@ -728,6 +757,7 @@ const phytochemicals = [
     PubChemCID: 101243415,
     MDLNumber: null,
     InventoryStatus: "Available in gram quantities",
+    TechnicalNote:"/technicalNotes/Isoandrographolide.pdf",
     Analogues: "Available",
   },
   {
@@ -753,6 +783,7 @@ const phytochemicals = [
     PubChemCID: 259846,
     MDLNumber: "MFCD00017351",
     InventoryStatus: "Available in gram quantities",
+    TechnicalNote:"/technicalNotes/Lupeol.pdf",
     Analogues: "Available",
   },
   {
@@ -778,6 +809,7 @@ const phytochemicals = [
     PubChemCID: 9848024,
     MDLNumber: "MFCD07779130",
     InventoryStatus: "Available in gram quantities",
+    TechnicalNote:"/technicalNotes/Neoandrographolide.pdf",
     Analogues: "Available",
   },
   {
@@ -803,6 +835,7 @@ const phytochemicals = [
     PubChemCID: 100017,
     MDLNUMBER: "MFCD01735386",
     InventoryStatus: "Available in gram quantities",
+    TechnicalNote:"/technicalNotes/Nimbolide.pdf",
     Analogues: null,
   },
   {
@@ -828,6 +861,7 @@ const phytochemicals = [
     PubChemCID: 178770,
     MDLNumber: null,
     InventoryStatus: "Available in gram quantities",
+    TechnicalNote:"/technicalNotes/Nimocinol(Nimonol).pdf",
     Analogues: "Available",
   },
   {
@@ -852,6 +886,7 @@ const phytochemicals = [
     PubChemCID: 10494,
     MDLNumber: "MFCD00064914",
     InventoryStatus: "Available in gram quantities",
+    TechnicalNote:"/technicalNotes/Oleanolicacid.pdf",
     Analogues: "Available",
   },
   {
@@ -877,6 +912,7 @@ const phytochemicals = [
     PubChemCID: 358901,
     MDLNumber: "MFCD17166965",
     InventoryStatus: "Available in gram quantities",
+    TechnicalNote:"/technicalNotes/Phyllanthin.pdf",
     Analogues: null,
   },
   {
@@ -901,6 +937,7 @@ const phytochemicals = [
     PubChemCID: 5320621,
     MDLNumber: "MFCD15146947",
     InventoryStatus: "Available in gram quantities",
+    TechnicalNote:"/technicalNotes/Piperlonguminine.pdf",
     Analogues: null,
   },
   {
@@ -923,6 +960,7 @@ const phytochemicals = [
     PubChemCID: 6199,
     MDLNumber: "MFCD00010520",
     InventoryStatus: "Available in gram quantities",
+    TechnicalNote:"/technicalNotes/Psoralen.pdf",
     Analogues: "Available",
   },
   {
@@ -946,6 +984,7 @@ const phytochemicals = [
     PubChemCID: 124062,
     MDLNumber: "MFCD02752095",
     InventoryStatus: "Available in gram quantities",
+    TechnicalNote:"/technicalNotes/Rubiadin.pdf",
     Analogues: "Available",
   },
   {
@@ -970,6 +1009,7 @@ const phytochemicals = [
     PubChemCID: 64945,
     MDLNumber: "MFCD00009621",
     InventoryStatus: "Available in milligrams",
+    TechnicalNote:"/technicalNotes/Ursolicacid.pdf",
     Analogues: "Available",
   },
   {
@@ -993,6 +1033,7 @@ const phytochemicals = [
     PubChemCID: 442929,
     MDLNumber: "MFCD09028068",
     InventoryStatus: "Available in gram quantities",
+    TechnicalNote:"/technicalNotes/Vasicine.pdf",
     Analogues: "Available",
   },
   {
@@ -1016,6 +1057,7 @@ const phytochemicals = [
     PubChemCID: 10242,
     MDLNumber: "MFCD11519457",
     InventoryStatus: "Available in gram quantities",
+    TechnicalNote:"/technicalNotes/Vasicinone.pdf",
     Analogues: "Available",
   },
   {
@@ -1042,6 +1084,7 @@ const phytochemicals = [
     PubChemCID: 45489105,
     MDLNumber: "MFCD10687098",
     InventoryStatus: "Available in gram quantities",
+    TechnicalNote:"/technicalNotes/WithaferinA.pdf",
     Analogues: "Available",
   },
   {
@@ -1068,6 +1111,7 @@ const phytochemicals = [
     PubChemCID: 11294368,
     MDLNumber: "MFCD07779143",
     InventoryStatus: "Available in gram quantities",
+    TechnicalNote:"/technicalNotes/WithanolideA.pdf",
     Analogues: null,
   },
   {
@@ -1093,6 +1137,7 @@ const phytochemicals = [
     PubChemCID: 14236711,
     MDLNumber: "MFCD19053156",
     InventoryStatus: "Available in gram quantities",
+    TechnicalNote:"/technicalNotes/WithanolideB.pdf",
     Analogues: null,
   },
   {
@@ -1118,6 +1163,7 @@ const phytochemicals = [
     PubChemCID: 21679027,
     MDLNumber: "MFCD09264639",
     InventoryStatus: "Available in gram quantities",
+    TechnicalNote:"/technicalNotes/Withanone.pdf",
     Analogues: null,
   },
 ];
