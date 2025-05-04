@@ -1,8 +1,11 @@
 import React from 'react';
 import { NavLink, useNavigate } from "react-router-dom";
 import phytochemicals from "../data/Phytochemicals_data";
-import PhytochemicalsPdf from "../assets/files/Listofphytochemicalswithstructuresandactivity.pdf";
 import FurutreProductsPdf from "../assets/files/future-products.pdf";
+import listofPhytochemicalsinstock from "../assets/files/Listofphytochemicals-InStock.pdf";
+import listofPhytochemicalswithstructure from "../assets/files/Listofphytochemicalswithstructuresandfunctionalactivitynew-instock.pdf";
+import listofPhytochemicalsfuture from "../assets/files/ListofPhytochemicals-futureProducts.pdf";
+import listofPhytochemicalsstrictirefuture from "../assets/files/Listofphytochemicalswithstructuresandfunctionalactivity-futureproducts.pdf";
 
 
 
@@ -53,7 +56,7 @@ const Products = () => {
             </div>
 
             <div className="container">
-                <div className="row justify-content-end">
+                {/* <div className="row justify-content-end">
                 <div className="col-md-6 text-end">
                     <NavLink
                     className="green-btn"
@@ -63,7 +66,7 @@ const Products = () => {
                     List of Phytochemicals with structure activities
                     </NavLink>
                 </div>
-                </div>
+                </div> */}
                 <div className="pageContainer">
                 <ul className="nav nav-pills mb-3" id="pills-tab" role="tablist">
                     <li className="nav-item" role="presentation">
@@ -104,6 +107,31 @@ const Products = () => {
                     >
                     {/* table responsive starts here */}
                     <div className="table-responsive">
+
+                        <table className="table table-hover">
+                            <thead>
+                            <tr>
+                                <th scope="col">Name of the Document</th>
+                                <th scope="col">Download</th>                               
+                            </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>List of Phytochemicals Instock</td>
+                                    <td>
+                                        <NavLink className="link-primary" to={listofPhytochemicalsinstock} target='_blank'><i class="bi bi-download"></i> Download</NavLink>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>List of phytochemicals with structures and functional activity instock</td>
+                                    <td>
+                                        <NavLink className="link-primary" to={listofPhytochemicalswithstructure} target='_blank'><i class="bi bi-download"></i> Download</NavLink>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
                         <table className="table table-hover">
                         <thead>
                             <tr>
@@ -145,13 +173,32 @@ const Products = () => {
                     role="tabpanel"
                     aria-labelledby="pills-Lead-Phytochemicals-tab"
                     >
-                    <NavLink
-                        className="green-btn"
-                        to={FurutreProductsPdf}
-                        target="_blank"
-                    >
-                        Download Future Products
-                    </NavLink>
+
+                        <div className="table-responsive">
+                        <table className="table table-hover">
+                            <thead>
+                            <tr>
+                                <th scope="col">Name of Future Document</th>
+                                <th scope="col">Download</th>                               
+                            </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>List of Phytochemicals Future</td>
+                                    <td>
+                                        <NavLink className="link-primary" to={listofPhytochemicalsfuture} target='_blank'><i class="bi bi-download"></i> Download</NavLink>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>List of Phytochemicals with Structure and Functional Activity</td>
+                                    <td>
+                                        <NavLink className="link-primary" to={listofPhytochemicalsstrictirefuture} target='_blank'><i class="bi bi-download"></i> Download</NavLink>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div>
                     </div>
                 </div>
                 </div>
